@@ -1,0 +1,19 @@
+@baseUrl = http://localhost:5000/api
+@eventId = 5f1dc143eac596594459b873
+
+GET {{baseUrl}}/events
+
+###
+
+GET {{baseUrl}}/events/{{eventId}}
+
+###
+
+POST {{baseUrl}}/events
+Content-Type: application/json
+
+{
+    "title": ".NET MeetUp",
+    "description": "A really cool MeetUp!",
+    "takesPlaceOn": "2020-07-30 16:00:00"
+}
